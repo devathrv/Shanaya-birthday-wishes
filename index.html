@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Are You Shanaya ji? 💖</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #c2185b;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .yes {
+      background-color: #f06292;
+      color: white;
+    }
+
+    .yes:hover {
+      background-color: #ec407a;
+    }
+
+    .no {
+      background-color: #e0e0e0;
+      color: #444;
+    }
+
+    .no:hover {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Are you Shanaya ji? 💖</h1>
+
+  <div>
+    <button class="btn yes" onclick="goToSite()">Yes</button>
+    <button class="btn no" onclick="sorry()">No</button>
+  </div>
+
+  <script>
+    function goToSite() {
+      window.location.href = "main.html";
+    }
+
+    function sorry() {
+      alert("Oops! Yeh site sirf Shanaya ji ke liye hai 😝");
+    }
+  </script>
+
+</body>
+</html>
