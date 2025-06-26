@@ -1,74 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Are You Shanaya ji? 💖</title>
-  <style>
-    body {
-      background: linear-gradient(to right, #ff9a9e, #fad0c4);
-      color: #333;
-      font-family: 'Segoe UI', sans-serif;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      color: #c2185b;
-    }
-
-    .btn {
-      padding: 12px 24px;
-      margin: 10px;
-      font-size: 1.1em;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .yes {
-      background-color: #f06292;
-      color: white;
-    }
-
-    .yes:hover {
-      background-color: #ec407a;
-    }
-
-    .no {
-      background-color: #e0e0e0;
-      color: #444;
-    }
-
-    .no:hover {
-      background-color: #ccc;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TejRakshanet - Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <h1>Are you Shanaya ji? 💖</h1>
-
-  <div>
-    <button class="btn yes" onclick="goToSite()">Yes</button>
-    <button class="btn no" onclick="sorry()">No</button>
+  <header>
+    <div class="logo">🔒 TejRakshanet</div>
+    <div class="menu-btn" onclick="toggleMenu(this)">☰</div>
+  </header>
+  <div class="menu" id="menu">
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="#feedback">Feedback</a>
+    <a href="contact.html">Contact</a>
   </div>
 
-  <script>
-    function goToSite() {
-      window.location.href = "main.html";
-    }
+  <section class="hero">
+    <h1>Safety First</h1>
+    <p>Securing India's digital frontiers with intelligence-driven cybersecurity solutions. Join the mission today.</p>
+    <button class="cta-button">Join the Mission</button>
+  </section>
 
-    function sorry() {
-      alert("Oops! Yeh site sirf Shanaya ji ke liye hai 😝");
-    }
-  </script>
+  <section class="services" id="services">
+    <a href="services.html#threat" class="service-card"><h3>Cyber Threat Intelligence</h3></a>
+    <a href="services.html#vapt" class="service-card"><h3>VAPT</h3></a>
+    <a href="services.html#forensics" class="service-card"><h3>Digital Forensics</h3></a>
+    <a href="services.html#risk" class="service-card"><h3>Risk Management</h3></a>
+    <a href="services.html#awareness" class="service-card"><h3>Cyber Awareness</h3></a>
+    <a href="services.html#response" class="service-card"><h3>Incident Response</h3></a>
+  </section>
 
+  <section class="carousel" id="feedback">
+    <div class="feedback-card"><strong>Aarav Sharma</strong>“Excellent service and strong cybersecurity tools!”</div>
+    <div class="feedback-card"><strong>Riya Mehta</strong>“They secured our business very quickly. Professional team.”</div>
+    <div class="feedback-card"><strong>Devansh Rao</strong>“Top-tier risk management and forensics. Highly recommended.”</div>
+    <div class="feedback-card"><strong>Shruti Desai</strong>“TejRakshanet delivers fast, accurate threat intelligence.”</div>
+    <div class="feedback-card"><strong>Arjun Khanna</strong>“Trusted them with our network. Results were impressive.”</div>
+  </section>
+
+  <footer>
+    <p>Contact securely on <a href="https://wa.me/918779989576" style="color:#00eaff;">WhatsApp</a></p>
+    <p>&copy; 2025 TejRakshanet × Ekatruth. All rights reserved. Made with ❤️ for Bharat.</p>
+  </footer>
+
+  <a href="https://wa.me/918779989576" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
